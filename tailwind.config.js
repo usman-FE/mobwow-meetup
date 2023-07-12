@@ -18,5 +18,6 @@ bodyOverflow: function (modal) {
 // viridian #00798A
 // viridian hover #008fa3
 // peach #F65858
+// DARD GOLD #7C6F50
 
 // px-6 sm:px-4 xl:px-0 md:max-w-[1120px] w-full mx-auto
