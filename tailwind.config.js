@@ -16,4 +16,7 @@ bodyOverflow: function (modal) {
 // GRAY6 #707070
 // GRAY7 #212121
 // viridian #00798A
+// viridian hover #008fa3
 // peach #F65858
+
+// px-6 sm:px-4 xl:px-0 md:max-w-[1120px] w-full mx-auto
