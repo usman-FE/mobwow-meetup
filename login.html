@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html
+  lang="en"
+  class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="./dist/main.css" />
+
+    <!-- <link
+      rel="icon"
+      type="image/x-icon"
+      href="/images/favicon-KnowAPE.png" /> -->
+
+    <!-- <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script> -->
+    <!-- INTERSECT -->
+    <!-- Alpine Plugins -->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/@alpinejs/intersect@3.x.x/dist/cdn.min.js"></script>
+
+    <!-- CORE -->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.12.1/dist/cdn.min.js"></script>
+
+    <title>mobWOW | Meetup</title>
+  </head>
+
+  <body>
+    <!-- MAIN CONTAINER START -->
+    <main class="h-full">
+      <!-- HEADER START -->
+      <header>
+        <div
+          class="px-6 sm:px-4 xl:px-0 md:max-w-[1120px] w-full mx-auto flex py-6">
+          <!-- LOGO -->
+          <a
+            href="#"
+            class="h-4 md:h-5">
+            <img
+              src="images/mobWOW-Base-Logo-Red (2).svg"
+              alt="mobWOW logo"
+              class="h-full w-auto" />
+          </a>
+        </div>
+      </header>
+      <!-- HEADER END -->
+      <!-- SIGN UP SECTION START -->
+      <section class="mt-7 lg:mt-16 mb-36">
+        <div
+          class="px-6 sm:px-4 xl:px-0 md:max-w-[1120px] w-full mx-auto flex items-center justify-center">
+          <div
+            class="sm:border sm:border-[#E6E6E6] sm:rounded-lg sm:p-8 sm:pb-15 relative w-full flex flex-col items-center max-w-md">
+            <form class="w-full">
+              <!-- HEAD -->
+              <div class="flex flex-col justify-center items-center">
+                <div class="w-12 mb-2">
+                  <img
+                    src="images/mobWOW_VEHICLES_(RED)_Favicon-02.png"
+                    alt=""
+                    class="w-full h-auto" />
+                </div>
+                <h1 class="font-bold text-3xl mb-3 text-[#212121]">
+                  Log in
+                </h1>
+                <div class="flex space-x-1 justify-center">
+                  <span>Not a member yet?</span
+                  ><a
+                    class="text-[#00798A] hover:no-underline"
+                    href="signup.html"
+                    >Sign up</a
+                  >
+                </div>
+              </div>
+              <!-- LOGIN FORM -->
+              <div>
+                <!-- EMAIL -->
+                <div class="flex flex-col mb-5">
+                  <label
+                    for="email"
+                    class="text-base mb-1 text-[#000000de]"
+                    >Email</label
+                  >
+                  <div class="relative">
+                    <label
+                      for="email"
+                      class="absolute top-1/2 -translate-y-1/2 px-4">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="w-5 h-5">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"></path>
+                      </svg>
+                    </label>
+                    <input
+                      type="email"
+                      required=""
+                      class="py-2 px-4 pl-12 w-full text-base font-normal text-[#000000de] border border-[#e6e6e6] rounded-md outline-[#F65858] transition-all hover:border-black"
+                      id="email"
+                      placeholder="Enter email" />
+                  </div>
+                </div>
+                <!-- PASSWORD -->
+                <div class="flex flex-col mb-5">
+                  <div class="flex items-center justify-between">
+                    <label
+                      for="password"
+                      class="text-base mb-1 text-[#000000de]"
+                      >Password</label
+                    >
+                    <a
+                      href="#"
+                      class="text-sm text-[#00798A]"
+                      >Forget password?</a
+                    >
+                  </div>
+                  <div class="relative">
+                    <label
+                      for="password"
+                      class="absolute top-1/2 -translate-y-1/2 px-4">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="w-5 h-5">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z"></path>
+                      </svg>
+                    </label>
+                    <input
+                      type="password"
+                      placeholder="Enter Password"
+                      required=""
+                      class="py-2 px-4 pl-12 w-full text-base font-normal text-[#000000de] border border-[#e6e6e6] rounded-md outline-[#F65858] transition-all hover:border-black"
+                      id="password" />
+                  </div>
+                </div>
+                <!-- REMEMBER ME -->
+                <div class="block text-base text-[#0000009e]">
+                  <div class="relative w-full flex">
+                    <input
+                      type="checkbox"
+                      name="remember"
+                      id="remember"
+                      value="remember"
+                      class="absolute h-5 w-5 bg-white rounded cursor-pointer ml-3 top-1/2 -translate-y-1/2 inline-block peer checked:accent-[#00798A]" />
+                    <label
+                      for="remember"
+                      class="cursor-pointer peer-checked:text-[#00798A] peer-checked:border-[#00798A] peer-checked:bg-[#00798A]/10 transition-all rounded-md w-full h-full bg-white p-3 pl-11 text-[#000000de]">
+                      <span
+                        class="flex flex-col justify-center items-start text-left">
+                        <span
+                          class="text-inherit capitalize select-none"
+                          >Remember me</span
+                        >
+                      </span>
+                    </label>
+                  </div>
+                </div>
+                <!-- SUBMIT -->
+                <button
+                  type="submit"
+                  class="w-full h-12 mt-4 rounded-lg text-white fill-white font-semibold text-xl py-2 px-3 bg-[#e32359] hover:bg-[#e63a6a] transition-all"
+                  name="submitButton">
+                  Log in
+                </button>
+              </div>
+              <!-- DIVIDER -->
+              <div
+                class="flex flex-row w-full justify-between items-center mt-6">
+                <div class="border-b border-[#E6E6E6] w-full"></div>
+                <span class="px-3 text-[#707070]">or</span>
+                <div class="border-b border-[#E6E6E6] w-full"></div>
+              </div>
+              <!-- LINKS -->
+              <div class="mt-6 flex flex-col gap-3">
+                <a
+                  href="#"
+                  class="w-full font-normal border border-[#e6e6e6] py-3.5 pl-4 rounded-lg flex flex-row items-center justify-between cursor-pointer xs:no-underline hover:no-underline c1g28vq9">
+                  <span class="w-6">
+                    <img
+                      src="images/facebook.svg"
+                      alt="facebook"
+                      class="w-full h-auto" />
+                  </span>
+                  <span>Continue with Facebook</span>
+                  <i></i>
+                </a>
+                <a
+                  href="#"
+                  class="w-full font-normal border border-[#e6e6e6] py-3.5 pl-4 rounded-lg flex flex-row items-center justify-between cursor-pointer xs:no-underline hover:no-underline c1g28vq9">
+                  <span class="w-6">
+                    <img
+                      src="images/google.svg"
+                      alt="google"
+                      class="w-full h-auto" />
+                  </span>
+                  <span>Continue with Google</span>
+                  <i></i>
+                </a>
+                <a
+                  href="#"
+                  class="w-full font-normal border border-[#e6e6e6] py-3.5 pl-4 rounded-lg flex flex-row items-center justify-between cursor-pointer xs:no-underline hover:no-underline c1g28vq9">
+                  <span class="w-6">
+                    <img
+                      src="images/apple.svg"
+                      alt="apple"
+                      class="w-full h-auto" />
+                  </span>
+                  <span>Continue with Apple</span>
+                  <i></i>
+                </a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- SIGN UP SECTION END -->
+      <!-- FOOTER SECTION START -->
+      <footer class="bg-[#212121] text-[#F6F7F8]">
+        <div
+          class="px-6 sm:px-4 xl:px-0 md:max-w-[1120px] w-full mx-auto pt-4">
+          <!-- TOP -->
+          <div
+            class="flex flex-row items-center justify-center sm:justify-start pb-6 mt-2 border-b border-solid border-[#707070]">
+            <div class="hidden sm:block font-bold">
+              Create your own Meetup group.
+              <a
+                href="#"
+                class="inline-flex ml-4 px-3.5 py-2 border-2 rounded-md hover:bg-white hover:text-[#212121] focus:bg-white focus:text-[#212121] transition-all"
+                >Get Started</a
+              >
+            </div>
+            <a
+              href="#"
+              class="font-bold py-2 px-3 sm:hidden"
+              >Start a new group</a
+            >
+          </div>
+          <!-- MIDDLE -->
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 py-5">
+            <div>
+              <h4 class="text-base md:text-lg font-semibold">
+                Account
+              </h4>
+              <ul>
+                <li class="my-1">
+                  <a
+                    href="#"
+                    class="text-sm text-[#C5C4C4] hover:text-white"
+                    >Sign up</a
+                  >
+                </li>
+                <li class="my-1">
+                  <a
+                    href="#"
+                    class="text-sm text-[#C5C4C4] hover:text-white"
+                    >Log in</a
+                  >
+                </li>
+                <li class="my-1">
+                  <a
+                    href="#"
+                    class="text-sm text-[#C5C4C4] hover:text-white"
+                    >Help</a
+                  >
+                </li>
+                <li class="my-1">
+                  <a
+                    href="#"
+                    class="text-sm text-[#C5C4C4] hover:text-white"
+                    >Become an Affiliate</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="text-base md:text-lg font-semibold">
+                Discover
+              </h4>
+              <ul>
+                <li class="my-1">
+                  <a
+                    href="#"
+                    class="text-sm text-[#C5C4C4] hover:text-white"
+                    >Groups</a
+                  >
+                </li>
+                <li class="my-1">
+                  <a
+                    href="#"
+                    class="text-sm text-[#C5C4C4] hover:text-white"
+                    >Calender</a
+                  >
+                </li>
+                <li class="my-1">
+                  <a
+                    href="#"
+                    class="text-sm text-[#C5C4C4] hover:text-white"
+                    >Topics</a
+                  >
+                </li>
+                <li class="my-1">
+                  <a
+                    href="#"
+                    class="text-sm text-[#C5C4C4] hover:text-white"
+                    >Cities</a
+                  >
+                </li>
+                <li class="my-1">
+                  <a
+                    href="#"
+                    class="text-sm text-[#C5C4C4] hover:text-white"
+                    >Online events</a
+                  >
+                </li>
+                <li class="my-1">
+                  <a
+                    href="#"
+                    class="text-sm text-[#C5C4C4] hover:text-white"
+                    >Local guides</a
+                  >
+                </li>
+                <li class="my-1">
+                  <a
+                    href="#"
+                    class="text-sm text-[#C5C4C4] hover:text-white"
+                    >Make friends</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="text-base md:text-lg font-semibold">
+                Meetup
+              </h4>
+              <ul>
+                <li class="my-1">
+                  <a
+                    href="#"
+                    class="text-sm text-[#C5C4C4] hover:text-white"
+                    >About</a
+                  >
+                </li>
+                <li class="my-1">
+                  <a
+                    href="#"
+                    class="text-sm text-[#C5C4C4] hover:text-white"
+                    >Blog</a
+                  >
+                </li>
+                <li class="my-1">
+                  <a
+                    href="#"
+                    class="text-sm text-[#C5C4C4] hover:text-white"
+                    >Meetup pro</a
+                  >
+                </li>
+                <li class="my-1">
+                  <a
+                    href="#"
+                    class="text-sm text-[#C5C4C4] hover:text-white"
+                    >Careers</a
+                  >
+                </li>
+                <li class="my-1">
+                  <a
+                    href="#"
+                    class="text-sm text-[#C5C4C4] hover:text-white"
+                    >Apps</a
+                  >
+                </li>
+                <li class="my-1">
+                  <a
+                    href="#"
+                    class="text-sm text-[#C5C4C4] hover:text-white"
+                    >Podcasts</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- END -->
+          <div
+            class="mt-10 flex flex-col md:flex-row gap-x-10 gap-y-5 items-center pb-12">
+            <div class="text-white text-sm uppercase">
+              &copy; 2023 mobWOW
+            </div>
+            <ul class="flex gap-6 flex-wrap">
+              <li>
+                <a
+                  href="#"
+                  class="text-[#C5C4C4] hover:text-white transition-all text-sm"
+                  >Terms of Service</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-[#C5C4C4] hover:text-white transition-all text-sm"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-[#C5C4C4] hover:text-white transition-all text-sm"
+                  >Cookie Settings</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-[#C5C4C4] hover:text-white transition-all text-sm"
+                  >Cookie Policy</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-[#C5C4C4] hover:text-white transition-all text-sm"
+                  >Help</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+      <!-- FOOTER SECTION END -->
+    </main>
+    <!-- MAIN CONTAINER END -->
+  </body>
+</html>
