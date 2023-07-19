@@ -27,217 +27,74 @@
   <body>
     <!-- MAIN CONTAINER START -->
     <main class="h-full">
-      <!-- HEADER SECTION START -->
-      <header class="z-50 top-0 bg-transparent mb-10">
-        <div class="px-6 sm:px-4 xl:px-4 flex flex-col">
-          <div
-            class="transition-all ease-linear duration-300 h-[120px] lg:h-16 overflow-hidden sm:overflow-visible">
-            <div
-              class="flex flex-row items-center justify-between min-h-[64px] gap-3 sm:gap-0">
-              <!-- LOGO AND SEARCH CONTAINER -->
-              <div class="flex flex-row items-center space-x-10">
-                <!-- LOGO -->
-                <a
-                  href="#"
-                  class="lg:pl-6 h-4 md:h-5">
-                  <img
-                    src="images/mobWOW-Base-Logo-Red (2).svg"
-                    alt="mobWOW logo"
-                    class="h-full w-auto" />
-                </a>
-                <!-- SEARCH BAR -->
-                <div class="hidden lg:block mr-auto ml-10">
-                  <form class="outline-none w-full">
-                    <div class="flex flex-row -space-x-0.5">
-                      <!-- KEYWORD -->
-                      <div
-                        class="w-full hover:z-20 grow shrink-0 basis-[calc(50%_-_42px)]">
-                        <div class="relative">
-                          <!-- SEARCH ICON -->
-                          <div class="absolute top-2.5 left-2.5">
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="24"
-                              height="24"
-                              viewBox="0 0 24 24"
-                              fill="none"
-                              class="injected-svg text-gray6 fill-current"
-                              data-src="https://secure.meetupstatic.com/next/images/design-system-icons/search-outline.svg"
-                              xmlns:xlink="http://www.w3.org/1999/xlink"
-                              style="
-                                width: 22px;
-                                height: 22px;
-                                width: 22px;
-                                height: 22px;
-                              "
-                              data-icon="icon-1221">
-                              <title>icon</title>
-                              <path
-                                fill-rule="evenodd"
-                                clip-rule="evenodd"
-                                d="M16.5 10.5C16.5 13.8137 13.8137 16.5 10.5 16.5C7.18629 16.5 4.5 13.8137 4.5 10.5C4.5 7.18629 7.18629 4.5 10.5 4.5C13.8137 4.5 16.5 7.18629 16.5 10.5ZM18 10.5C18 14.6421 14.6421 18 10.5 18C6.35786 18 3 14.6421 3 10.5C3 6.35786 6.35786 3 10.5 3C14.6421 3 18 6.35786 18 10.5ZM16.4697 17.5303L15.9568 17.0174C16.3407 16.6957 16.6957 16.3407 17.0174 15.9568L17.5303 16.4697L20.5303 19.4697C20.8232 19.7626 20.8232 20.2374 20.5303 20.5303C20.2374 20.8232 19.7626 20.8232 19.4697 20.5303L16.4697 17.5303Z"></path>
-                            </svg>
-                          </div>
-                          <!-- SEARCH INPUT -->
-                          <input
-                            type="search"
-                            name="keywords"
-                            id="keywords"
-                            placeholder="Search events"
-                            class="appearance-none border p-2 border-[#D9D9D9] outline-none hover:border-[#707070] focus:border-[#00798A] hover:z-10 focus:z-10 h-[42px] lg:min-w-[120px] xl:min-w-[300px] pl-9 rounded-l-lg flex-grow w-full rounded-r-none placeholder:text-[#707070]" />
-                        </div>
-                      </div>
-                      <!-- LOCATION -->
-                      <div
-                        class="transition-all ease-out duration-200 opacity-100 flex-[1_0_50%]">
-                        <div class="flex flex-row -space-x-0.5">
-                          <!-- SEARCH BAR LOCATION -->
-                          <div class="flex-grow w-full">
-                            <div class="relative">
-                              <input
-                                type="search"
-                                autocomplete="off"
-                                placeholder="Neighborhood, city or zip"
-                                class="appearance-none border p-2 pl-4 border-[#D9D9D9] outline-none hover:border-[#707070] focus:border-[#00798A] hover:z-10 focus:z-10 h-[42px] lg:min-w-[120px] xl:min-w-[250px] rounded-l-none w-full placeholder:text-[#707070]" />
-                            </div>
-                          </div>
-                          <!-- SUBMIT BUTTON -->
-                          <button
-                            type="submit"
-                            class="relative bg-[#F65858] rounded-r-lg p-2 flex flex-col items-center justify-center h-[42px] min-w-[42px]">
-                            <div class="h-5 w-5">
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="24"
-                                height="24"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                class="injected-svg text-white fill-current"
-                                data-src="https://secure.meetupstatic.com/next/images/design-system-icons/search-outline.svg"
-                                xmlns:xlink="http://www.w3.org/1999/xlink"
-                                style="
-                                  width: 20px;
-                                  height: 20px;
-                                  width: 20px;
-                                  height: 20px;
-                                "
-                                data-icon="icon-1222">
-                                <title>icon</title>
-                                <path
-                                  fill-rule="evenodd"
-                                  clip-rule="evenodd"
-                                  d="M16.5 10.5C16.5 13.8137 13.8137 16.5 10.5 16.5C7.18629 16.5 4.5 13.8137 4.5 10.5C4.5 7.18629 7.18629 4.5 10.5 4.5C13.8137 4.5 16.5 7.18629 16.5 10.5ZM18 10.5C18 14.6421 14.6421 18 10.5 18C6.35786 18 3 14.6421 3 10.5C3 6.35786 6.35786 3 10.5 3C14.6421 3 18 6.35786 18 10.5ZM16.4697 17.5303L15.9568 17.0174C16.3407 16.6957 16.6957 16.3407 17.0174 15.9568L17.5303 16.4697L20.5303 19.4697C20.8232 19.7626 20.8232 20.2374 20.5303 20.5303C20.2374 20.8232 19.7626 20.8232 19.4697 20.5303L16.4697 17.5303Z"></path>
-                              </svg>
-                            </div>
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-              </div>
-              <!-- HEADER BUTTONS -->
-              <div
-                class="sm:ml-4 flex flex-row space-x-5 items-center">
-                <!-- LANGUAGE -->
-                <div class="">
-                  <button
-                    class="flex items-center font-medium text-sm text-[#212121] cursor-pointer">
-                    <span class="mr-1">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        class="injected-svg fill-current"
-                        data-src="https://secure.meetupstatic.com/next/images/design-system-icons/globe-outline.svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink"
-                        style="
-                          width: 20px;
-                          height: 20px;
-                          width: 20px;
-                          height: 20px;
-                        "
-                        data-icon="icon-23">
-                        <title>icon</title>
-                        <path
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                          d="M12 20.5C12.923 20.5 14.0148 19.8686 14.9564 18.2993C15.2318 17.8404 15.4801 17.3207 15.6931 16.75H8.30689C8.51988 17.3207 8.76824 17.8404 9.0436 18.2993C9.98519 19.8686 11.077 20.5 12 20.5ZM7.85918 15.25C7.62983 14.2559 7.5 13.1607 7.5 12C7.5 10.8393 7.62983 9.74411 7.85918 8.75H16.1408C16.3702 9.74411 16.5 10.8393 16.5 12C16.5 13.1607 16.3702 14.2559 16.1408 15.25H7.85918ZM17.2812 16.75C16.939 17.8048 16.4863 18.7455 15.949 19.5289C17.1985 18.8722 18.2645 17.9136 19.05 16.75H17.2812ZM19.8565 15.25H17.676C17.886 14.231 18 13.1377 18 12C18 10.8623 17.886 9.76896 17.676 8.75H19.8565C20.2712 9.75122 20.5 10.8489 20.5 12C20.5 13.1511 20.2712 14.2488 19.8565 15.25ZM6.32399 15.25H4.14345C3.72882 14.2488 3.5 13.1511 3.5 12C3.5 10.8489 3.72882 9.75122 4.14345 8.75H6.32399C6.114 9.76896 6 10.8623 6 12C6 13.1377 6.114 14.231 6.32399 15.25ZM4.95003 16.75H6.71877C7.06103 17.8048 7.51372 18.7455 8.05102 19.5289C6.80154 18.8722 5.73554 17.9136 4.95003 16.75ZM8.30689 7.25H15.6931C15.4801 6.67932 15.2318 6.1596 14.9564 5.70068C14.0148 4.13136 12.923 3.5 12 3.5C11.077 3.5 9.98519 4.13136 9.0436 5.70068C8.76824 6.1596 8.51988 6.67932 8.30689 7.25ZM17.2812 7.25H19.05C18.2645 6.08642 17.1985 5.12778 15.949 4.47106C16.4863 5.25453 16.939 6.1952 17.2812 7.25ZM8.05102 4.47106C7.51372 5.25454 7.06102 6.1952 6.71877 7.25H4.95002C5.73554 6.08642 6.80154 5.12778 8.05102 4.47106ZM12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2Z"></path>
-                      </svg>
-                    </span>
-                    <span class="md:block hidden">English</span>
-                  </button>
-                </div>
-                <!-- LOGIN -->
-                <a
-                  href="#"
-                  class="text-sm font-medium hover:no-underline text-[#212121] hover:text-[#00798A]"
-                  >Login</a
-                >
-                <!-- SIGN UP -->
-                <a
-                  href="#"
-                  class="text-sm font-medium hover:no-underline hover:text-white hover:bg-[#008fa3] hover:border-[#008fa3] rounded-lg text-white fill-white py-2 px-4 whitespace-nowrap justify-center border border-[#00798a] bg-[#00798a]"
-                  >Sign up</a
-                >
-              </div>
-            </div>
-            <!-- SEARCH SMALL -->
-            <div class="mt-1 mb-2 block lg:hidden">
-              <form class="outline-none w-full">
-                <div
-                  class="flex flex-col w-full hover:z-20 grow shrink-0 basis-[calc(50%_-_42px)] relative">
-                  <div class="absolute top-2.5 left-2.5">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      class="injected-svg text-[#707070] fill-current"
-                      data-src="https://secure.meetupstatic.com/next/images/design-system-icons/search-outline.svg"
-                      xmlns:xlink="http://www.w3.org/1999/xlink"
-                      style="
-                        width: 22px;
-                        height: 22px;
-                        width: 22px;
-                        height: 22px;
-                      "
-                      data-icon="icon-2593">
-                      <title>icon</title>
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M16.5 10.5C16.5 13.8137 13.8137 16.5 10.5 16.5C7.18629 16.5 4.5 13.8137 4.5 10.5C4.5 7.18629 7.18629 4.5 10.5 4.5C13.8137 4.5 16.5 7.18629 16.5 10.5ZM18 10.5C18 14.6421 14.6421 18 10.5 18C6.35786 18 3 14.6421 3 10.5C3 6.35786 6.35786 3 10.5 3C14.6421 3 18 6.35786 18 10.5ZM16.4697 17.5303L15.9568 17.0174C16.3407 16.6957 16.6957 16.3407 17.0174 15.9568L17.5303 16.4697L20.5303 19.4697C20.8232 19.7626 20.8232 20.2374 20.5303 20.5303C20.2374 20.8232 19.7626 20.8232 19.4697 20.5303L16.4697 17.5303Z"></path>
-                    </svg>
-                  </div>
-                  <input
-                    type="search"
-                    name="keywords"
-                    id="keyword-bar-in-search"
-                    placeholder="Search events"
-                    class="appearance-none border p-2 border-[#D9D9D9] outline-none hover:border-[#707070] focus:border-[#00798A] h-[42px] lg:min-w-[120px] xl:min-w-[300px] pl-9 rounded-l-lg grow w-full placeholder:text-[#707070] rounded-r-lg" />
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </header>
-      <!-- HEADER SECTION END -->
       <!-- HERO SECTION START -->
-      <section>
+      <section
+        x-data="{
+          init(){
+            this.changeSlide()
+          },
+          heroSlides: [
+            {
+              text: 'communities',
+              imgSrc: 'images/slide-1.webp'
+            },
+            {
+              text: 'skills',
+              imgSrc: 'images/slide-2.webp'
+            },
+            {
+              text: 'friendships',
+              imgSrc: 'images/slide-3.webp'
+            },
+            {
+              text: 'passions',
+              imgSrc: 'images/slide-7.webp'
+            },
+            {
+              text: 'networks',
+              imgSrc: 'images/slide-5.webp'
+            },
+            {
+              text: 'careers',
+              imgSrc: 'images/slide-6.webp'
+            },
+          ],
+          currentSlide: 0,
+          changeSlide (){
+            setInterval(() => {
+              if(this.currentSlide < this.heroSlides.length - 1) {
+                this.currentSlide++;
+              }else{
+                this.currentSlide = 0
+              };
+            }, 1500);
+          }
+        }">
         <div
           class="px-6 sm:px-4 xl:px-0 md:max-w-[1120px] w-full mx-auto">
           <div
-            class="w-full relative mt-5 mb-20 sm:mt-24 flex flex-col items-center md:flex-row">
+            class="w-full relative mt-5 mb-14 sm:mt-16 flex flex-col items-center md:flex-row">
             <!-- LEFT SIDE -->
             <div
               class="flex flex-col w-full lg:w-1/2 space-y-6 md:mr-5 lg:mr-20 mb-6 md:mb-0">
+              <!-- LOGO -->
+              <div>
+                <a
+                  href="#"
+                  class="flex items-center justify-center w-32">
+                  <img
+                    class="w-full h-auto"
+                    src="images/mobWOW-Base-Logo-Red (2).svg"
+                    alt="" />
+                </a>
+              </div>
               <!-- HEADING -->
-              <h1 class="text-3xl sm:text-5xl font-bold">
-                The people platform—Where interests become friendships
+              <h1 class="text-2xl sm:text-4xl font-bold">
+                mobMeet—The people platform. Where interests become
+                <span
+                  class="text-[#F65858]"
+                  x-text="heroSlides[currentSlide].text"></span
+                >.
               </h1>
               <!-- CAPTION -->
               <p class="">
@@ -247,979 +104,273 @@
                 every day—sign up to join the fun.
               </p>
               <!-- CTA -->
-              <div>
+              <div class="flex">
                 <a
                   href="#"
-                  class="text-base font-medium hover:no-underline hover:text-white hover:bg-[#008fa3] hover:border-[#008fa3] rounded-lg text-white fill-white py-2 px-4 whitespace-nowrap justify-center border border-[#00798a] bg-[#00798a]"
-                  >Join Meetup</a
-                >
+                  class="mt-4 max-w-[17rem] w-full text-center rounded-lg text-white fill-white font-bold text-lg py-3 px-3 bg-[#e32359] hover:bg-[#e63a6a] transition-all">
+                  Start a group
+                </a>
               </div>
             </div>
             <!-- RIGHT SIDE -->
             <div class="w-5/6 lg:w-1/2 mb-6 lg:mb-0">
               <img
-                src="images/online_events.svg"
-                alt="Hero Illustration"
+                :src="heroSlides[currentSlide].imgSrc"
+                alt="Hero Image"
                 width="520"
                 height="232"
-                class="w-full h-auto" />
+                class="w-full h-auto rounded-xl" />
             </div>
           </div>
         </div>
       </section>
       <!-- HERO SECTION END -->
-      <!-- OPTIONS SECTION START -->
-      <section>
-        <div
-          class="px-6 sm:px-4 xl:px-0 md:max-w-[1120px] w-full mx-auto">
-          <!-- CARDS CONTAINER -->
-          <div class="relative mb-12">
-            <!-- CARDS -->
-            <div class="grid grid-cols-1 sm:grid-cols-3 gap-5 mt-5">
-              <!-- CARD -->
-              <div class="w-full">
-                <a
-                  href="#"
-                  class="hover:text-[#00798A] space-y-3 hover:underline group">
-                  <!-- IMAGE -->
-                  <div class="relative w-full h-[124px] sm:h-[200px]">
-                    <img
-                      src="images/category1.webp"
-                      alt="category"
-                      class="w-full rounded-lg object-cover max-h-32 md:max-h-48 group-hover:opacity-80 transition-all" />
-                  </div>
-                  <!-- CAPTION -->
-                  <div
-                    class="w-full text-left flex flex-row font-semibold text-[#00798A] items-center">
-                    Make new friends
-                    <span class="flex ml-2">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke-width="1.5"
-                        stroke="currentColor"
-                        class="w-6 h-6">
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                      </svg>
-                    </span>
-                  </div>
-                </a>
-              </div>
-              <!-- CARD -->
-              <div class="w-full">
-                <a
-                  href="#"
-                  class="hover:text-[#00798A] space-y-3 hover:underline group">
-                  <!-- IMAGE -->
-                  <div class="relative w-full h-[124px] sm:h-[200px]">
-                    <img
-                      src="images/category2.webp"
-                      alt="category"
-                      class="w-full rounded-lg object-cover max-h-32 md:max-h-48 group-hover:opacity-80 transition-all" />
-                  </div>
-                  <!-- CAPTION -->
-                  <div
-                    class="w-full text-left flex flex-row font-semibold text-[#00798A] items-center">
-                    Explore the outdoors
-                    <span class="flex ml-2">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke-width="1.5"
-                        stroke="currentColor"
-                        class="w-6 h-6">
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                      </svg>
-                    </span>
-                  </div>
-                </a>
-              </div>
-              <!-- CARD -->
-              <div class="w-full">
-                <a
-                  href="#"
-                  class="hover:text-[#00798A] space-y-3 hover:underline group">
-                  <!-- IMAGE -->
-                  <div class="relative w-full h-[124px] sm:h-[200px]">
-                    <img
-                      src="images/category3.webp"
-                      alt="category"
-                      class="w-full rounded-lg object-cover max-h-32 md:max-h-48 group-hover:opacity-80 transition-all" />
-                  </div>
-                  <!-- CAPTION -->
-                  <div
-                    class="w-full text-left flex flex-row font-semibold text-[#00798A] items-center">
-                    Connect over tech
-                    <span class="flex ml-2">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke-width="1.5"
-                        stroke="currentColor"
-                        class="w-6 h-6">
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                      </svg>
-                    </span>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- PILLS CONTAINER -->
-          <div
-            x-data="{
-              pills:[
-                {
-                  title: `Boost your career`,
-                  url: '#'
-                },
-                {
-                  title: `Find your zen`,
-                  url: '#'
-                },
-                {
-                  title: `Get moving`,
-                  url: '#'
-                },
-                {
-                  title: `Share language + culture`,
-                  url: '#'
-                },
-                {
-                  title: `Read with friends`,
-                  url: '#'
-                },
-                {
-                  title: `Write together`,
-                  url: '#'
-                },
-                {
-                  title: `Hone your craft`,
-                  url: '#'
-                },
-              ]
-            }"
-            class="flex flex-wrap gap-3 w-full items-center">
-            <template
-              x-for="(pill, index) in pills"
-              :key="index">
-              <div>
-                <a
-                  :href="pill.url"
-                  class="rounded-[40px] text-base px-4 py-3.5 text-white bg-[#00798a] border-[#00798a] leading-none flex items-center transition-all hover:bg-[#008fa3]"
-                  x-text="pill.title"></a>
-              </div>
-            </template>
-          </div>
-        </div>
-      </section>
-      <!-- OPTIONS SECTION END -->
-      <!-- HOW IT WORKS SECTION START-->
+      <!-- BENEFITS SECTION START-->
       <section>
         <div
           class="px-6 sm:px-4 xl:px-0 md:max-w-[1120px] w-full mx-auto">
           <div
-            class="text-center overflow-hidden relative z-10 py-20">
+            class="text-center overflow-hidden relative z-10 pt-20 pb-11">
             <h2
-              class="text-left sm:text-center text-2xl sm:text-3xl font-bold mb-2 uppercase">
-              How mobWOW meetup works
+              class="text-left sm:text-center text-2xl sm:text-3xl font-bold mb-14 uppercase">
+              mobMeet makes it easy to build a community
             </h2>
-            <p
-              class="text-left sm:text-center w-full sm:w-2/3 lg:w-1/2 mb-14 mx-auto text-[#707070]">
-              Meet new people who share your interests through online
-              and in-person events. It’s free to create an account.
-            </p>
             <!-- CARDS GRID -->
             <div
               class="grid grid-cols-1 md:grid-cols-3 mb-10 md:mb-20 gap-14">
               <!-- CARD -->
               <div
                 class="flex flex-col items-center justify-start gap-y-2">
-                <div class="">
+                <div class="w-36">
                   <img
-                    src="images/handsUp.svg"
-                    alt="Join a group" />
+                    src="images/hola.webp"
+                    alt="Join a group"
+                    class="w-full h-auto" />
                 </div>
                 <div class="text-center">
-                  <a
-                    href="#"
-                    class="text-[#00798A] font-semibold hover:underline text-base md:text-lg"
-                    >Join a group</a
-                  >
+                  <h3
+                    class="text-[#212121] text-base md:text-lg font-bold">
+                    Reach New People
+                  </h3>
                   <p
                     class="text-sm text-center font-normal text-[#212121] mt-2">
-                    Do what you love, meet others who love it, find
-                    your community. The rest is history!
+                    Connect with people in your area who are curious
+                    about the things you love.
                   </p>
+                  <a
+                    href="#"
+                    class="uppercase hover:underline text-[#F65858] mt-2 block text-sm"
+                    >Start now</a
+                  >
                 </div>
               </div>
               <!-- CARD -->
               <div
                 class="flex flex-col items-center justify-start gap-y-2">
-                <div class="">
+                <div class="w-36">
                   <img
-                    src="images/ticket.svg"
-                    alt="Find an event" />
+                    src="images/group.webp"
+                    alt="Join a group"
+                    class="w-full h-auto" />
                 </div>
                 <div class="text-center">
-                  <a
-                    href="#"
-                    class="text-[#00798A] font-semibold hover:underline text-base md:text-lg"
-                    >Find an event</a
-                  >
+                  <h3
+                    class="text-[#212121] text-base md:text-lg font-bold">
+                    Continuous Growth
+                  </h3>
                   <p
                     class="text-sm text-center font-normal text-[#212121] mt-2">
-                    Events are happening on just about any topic you
-                    can think of, from online gaming and photography
-                    to yoga and hiking.
+                    We’ll keep promoting your group throughout our
+                    network so it continues to grow.
                   </p>
+                  <a
+                    href="#"
+                    class="uppercase hover:underline text-[#F65858] mt-2 block text-sm"
+                    >Start now</a
+                  >
                 </div>
               </div>
               <!-- CARD -->
               <div
                 class="flex flex-col items-center justify-start gap-y-2">
-                <div class="">
+                <div class="w-36">
                   <img
-                    src="images/joinGroup.svg"
-                    alt="Start a group" />
+                    src="images/tickets.webp"
+                    alt="Join a group"
+                    class="w-full h-auto" />
                 </div>
                 <div class="text-center">
-                  <a
-                    href="#"
-                    class="text-[#00798A] font-semibold hover:underline text-base md:text-lg"
-                    >Start a group</a
-                  >
+                  <h3
+                    class="text-[#212121] text-base md:text-lg font-bold">
+                    Offset Costs
+                  </h3>
                   <p
                     class="text-sm text-center font-normal text-[#212121] mt-2">
-                    You don’t have to be an expert to gather people
-                    together and explore shared interests.
+                    Get support from your group members with member
+                    dues, event fees, or our fundraising tools.
                   </p>
+                  <a
+                    href="#"
+                    class="uppercase hover:underline text-[#F65858] mt-2 block text-sm"
+                    >Start now</a
+                  >
                 </div>
               </div>
             </div>
-            <div class="flex items-center justify-center">
-              <a
-                href="#"
-                class="text-base font-medium hover:no-underline hover:text-white hover:bg-[#008fa3] hover:border-[#008fa3] rounded-lg text-white fill-white py-2 px-4 whitespace-nowrap justify-center border border-[#00798a] bg-[#00798a]"
-                >Join Meetup</a
-              >
-            </div>
           </div>
         </div>
       </section>
-      <!-- HOW IT WORKS SECTION END-->
-      <!-- UPCOMING EVENTS SECTION START -->
-      <section>
-        <div
-          class="px-6 sm:px-4 xl:px-0 md:max-w-[1120px] w-full mx-auto py-16 mt-6">
-          <div
-            x-data="{
-              skip : 1,
-              next(){
-                this.scrollingTo((currentscrolledposition, offset) => currentscrolledposition + (offset * this.skip))
-              },
-    
-              prev(){
-                this.scrollingTo((currentscrolledposition, offset) => currentscrolledposition - (offset * this.skip))
-              },
-    
-              scrollingTo(direction){
-                let slider = this.$refs.slider
-                let currentscrolledposition = slider.scrollLeft
-                let offset = slider.lastElementChild.getBoundingClientRect().width;
-                slider.scrollTo({ left: direction(currentscrolledposition, offset), behavior: 'smooth' })
-              },
-              onlineCards: [
-                {
-                  title: `New Beginnings Virtual Book Club Meeting - Kingdom Single by Pastor Tony Evans`,
-                  type: 'Online event',
-                  time: 'Fri, Aug 4 · 3:00 AM PKT',
-                  info: `New Beginnings Christian Singles Meetup Group`,
-                  groupAge: 'new',
-                  attendees: 125,
-                },
-                {
-                  title: `New Beginnings Virtual Book Club Meeting - Kingdom Single by Pastor Tony Evans`,
-                  type: 'Online event',
-                  time: 'Fri, Aug 4 · 3:00 AM PKT',
-                  info: `New Beginnings Christian Singles Meetup Group`,
-                  groupAge: 'new',
-                  attendees: 125,
-                },
-                {
-                  title: `New Beginnings Virtual Book Club Meeting - Kingdom Single by Pastor Tony Evans`,
-                  type: 'Online event',
-                  time: 'Fri, Aug 4 · 3:00 AM PKT',
-                  info: `New Beginnings Christian Singles Meetup Group`,
-                  groupAge: 'new',
-                  attendees: 125,
-                },
-                {
-                  title: `New Beginnings Virtual Book Club Meeting - Kingdom Single by Pastor Tony Evans`,
-                  type: 'Online event',
-                  time: 'Fri, Aug 4 · 3:00 AM PKT',
-                  info: `New Beginnings Christian Singles Meetup Group`,
-                  groupAge: 'new',
-                  attendees: 125,
-                },
-                {
-                  title: `New Beginnings Virtual Book Club Meeting - Kingdom Single by Pastor Tony Evans`,
-                  type: 'Online event',
-                  time: 'Fri, Aug 4 · 3:00 AM PKT',
-                  info: `New Beginnings Christian Singles Meetup Group`,
-                  groupAge: 'new',
-                  attendees: 125,
-                },
-                {
-                  title: `New Beginnings Virtual Book Club Meeting - Kingdom Single by Pastor Tony Evans`,
-                  type: 'Online event',
-                  time: 'Fri, Aug 4 · 3:00 AM PKT',
-                  info: `New Beginnings Christian Singles Meetup Group`,
-                  groupAge: 'new',
-                  attendees: 125,
-                },
-                {
-                  title: `New Beginnings Virtual Book Club Meeting - Kingdom Single by Pastor Tony Evans`,
-                  type: 'Online event',
-                  time: 'Fri, Aug 4 · 3:00 AM PKT',
-                  info: `New Beginnings Christian Singles Meetup Group`,
-                  groupAge: 'new',
-                  attendees: 125,
-                },
-                {
-                  title: `New Beginnings Virtual Book Club Meeting - Kingdom Single by Pastor Tony Evans`,
-                  type: 'Online event',
-                  time: 'Fri, Aug 4 · 3:00 AM PKT',
-                  info: `New Beginnings Christian Singles Meetup Group`,
-                  groupAge: 'new',
-                  attendees: 125,
-                },
-                {
-                  title: `New Beginnings Virtual Book Club Meeting - Kingdom Single by Pastor Tony Evans`,
-                  type: 'Online event',
-                  time: 'Fri, Aug 4 · 3:00 AM PKT',
-                  info: `New Beginnings Christian Singles Meetup Group`,
-                  groupAge: 'new',
-                  attendees: 125,
-                },
-              ]
-            }"
-            class="flow-root">
-            <div
-              @keydown.right="next"
-              @keydown.left="prev"
-              tabindex="0"
-              class="relative flex flex-col sm:flex-row sm:items-end justify-between mb-2 md:items-center">
-              <div class="max-w-2xl">
-                <h2
-                  class="text-left sm:text-center text-2xl sm:text-3xl font-bold mb-2 uppercase">
-                  Upcoming online events
-                </h2>
-              </div>
-
-              <!-- LINK FOR MORE -->
-              <div class="flex justify-end items-center">
-                <a
-                  href="#"
-                  class="text-[#00798A] hover:underline"
-                  >Explore more events</a
-                >
-              </div>
-            </div>
-            <!-- CONTROLS -->
-            <div
-              class="flex justify-end sm:ml-2 sm:mt-0 flex-shrink-0 mb-2">
-              <div
-                class="relative flex items-center text-neutral-900 dark:text-neutral-300">
-                <button
-                  @click="prev"
-                  class="w-10 h-10 mr-[6px] bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-600 hover:text-white hover:bg-[#00798A] dark:hover:border-neutral-500 rounded-full flex items-center justify-center hover:border-neutral-300 focus:outline-none transition-all"
-                  title="Prev">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-5 w-5"
-                    viewBox="0 0 20 20"
-                    fill="currentColor">
-                    <path
-                      fill-rule="evenodd"
-                      d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
-                      clip-rule="evenodd"></path>
-                  </svg>
-                </button>
-
-                <button
-                  @click="next"
-                  class="w-10 h-10 bg-white dark:bg-black border border-neutral-200 dark:border-neutral-600 dark:hover:border-neutral-500 rounded-full flex items-center justify-center hover:border-neutral-300 focus:outline-none hover:text-white hover:bg-[#00798A] transition-all"
-                  title="Next"
-                  data-glide-dir=">">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-5 w-5"
-                    viewBox="0 0 20 20"
-                    fill="currentColor">
-                    <path
-                      fill-rule="evenodd"
-                      d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                      clip-rule="evenodd"></path>
-                  </svg>
-                </button>
-              </div>
-            </div>
-            <div>
-              <ul
-                x-ref="slider"
-                tabindex="0"
-                class="flex w-full overflow-hidden snap-mandatory snap-x">
-                <template
-                  x-for="(onlineCard, index) in onlineCards"
-                  :key="index">
-                  <li
-                    class="flex-shrink-0 flex flex-col items-center justify-center p-2 snap-start w-full sm:w-1/2 md:w-1/3 lg:w-1/4">
-                    <a
-                      class=""
-                      href="#">
-                      <div
-                        class="relative rounded-lg overflow-hidden group">
-                        <div class="aspect-video relative">
-                          <!-- IMAGE -->
-                          <img
-                            src="./images/event_1.jpeg"
-                            class="object-center w-full h-full"
-                            alt="nc-imgs" />
-                          <!-- TYPE -->
-                          <div
-                            class="absolute top-2 left-2 flex flex-row items-center z-10 text-xs rounded font-medium truncate py-0.5 pr-2 pl-1 bg-white">
-                            <span class="mr-1">
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="24"
-                                height="24"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                class="injected-svg text-gray6 fill-current"
-                                data-src="https://secure.meetupstatic.com/next/images/design-system-icons/video.svg"
-                                xmlns:xlink="http://www.w3.org/1999/xlink"
-                                style="
-                                  width: 16px;
-                                  height: 16px;
-                                  width: 16px;
-                                  height: 16px;
-                                "
-                                data-icon="icon-2">
-                                <title>icon</title>
-                                <path
-                                  fill-rule="evenodd"
-                                  clip-rule="evenodd"
-                                  d="M4 4C2.89543 4 2 4.89543 2 6V18C2 19.1046 2.89543 20 4 20H14C15.1046 20 16 19.1046 16 18V15.1869C16 15.107 16.089 15.0593 16.1555 15.1036L20.4453 17.9635C21.1099 18.4066 22 17.9302 22 17.1315V6.86852C22 6.06982 21.1099 5.59343 20.4453 6.03647L16.1555 8.89635C16.089 8.94066 16 8.89302 16 8.81315V6C16 4.89543 15.1046 4 14 4H4Z"></path>
-                              </svg>
-                            </span>
-                            <span class="text-[#707070] truncate"
-                              >Online Event</span
-                            >
-                          </div>
-                        </div>
-                      </div>
-                      <div class="p-3">
-                        <div
-                          class="uppercase text-sm leading-5 tracking-tight text-[#7C6F50] font-bold py-1 line-clamp-1 lg:line-clamp-2">
-                          Fri, Aug 4 · 3:00 AM PKT
-                        </div>
-                        <h3
-                          class="text-[#212121] font-semibold text-base pt-0 pb-1 line-clamp-3">
-                          New Beginnings Virtual Book Club Meeting -
-                          Kingdom Single by Pastor Tony Evans
-                        </h3>
-                        <div class="w-full text-sm mx-auto my-2">
-                          <p
-                            class="text-[#707070] inline-block max-w-[220px] whitespace-nowrap overflow-hidden text-ellipsis">
-                            New Beginnings Christian Singles Meetup
-                            Group
-                          </p>
-                          <a
-                            href="#"
-                            class="hidden md:block text-[#00798A] font-semibold"
-                            >New group</a
-                          >
-                        </div>
-                        <div class="flex items-center">
-                          <div>
-                            <ul class="flex">
-                              <li class="z-30">
-                                <span>
-                                  <svg
-                                    role="presentation"
-                                    viewBox="0 0 75 74"
-                                    version="1.1"
-                                    width="32"
-                                    height="32"
-                                    loading="lazy"
-                                    class="rounded-full">
-                                    <g
-                                      stroke="none"
-                                      stroke-width="1"
-                                      fill="none"
-                                      fill-rule="evenodd">
-                                      <g
-                                        transform="translate(-750.000000, -109.000000)">
-                                        <g
-                                          transform="translate(787.926915, 146.475953) rotate(-120.000000) translate(-787.926915, -146.475953) translate(750.426915, 110.475953)">
-                                          <g
-                                            transform="translate(0.350000, 0.000000)">
-                                            <path
-                                              d="M35.66773,0.88851 C16.15488,0.88851 0.33628,16.70676 0.33628,36.21961 C0.33628,55.73246 16.15488,71.55106 35.66773,71.55106 C55.18093,71.55106 70.99918,55.73246 70.99918,36.21961 C70.99918,16.70676 55.18093,0.88851 35.66773,0.88851 L35.66773,0.88851 Z"
-                                              fill="#F1A080"></path>
-                                            <path
-                                              d="M38.117625,0.188335 C18.604775,0.188335 2.786525,16.006935 2.786525,35.519785 C2.786525,55.032635 18.604775,70.850885 38.117625,70.850885 C57.630825,70.850885 73.449075,55.032635 73.449075,35.519785 C73.449075,16.006935 57.630825,0.188335 38.117625,0.188335 Z"
-                                              stroke="#353E48"
-                                              stroke-width="1.75"
-                                              stroke-linecap="round"
-                                              stroke-linejoin="round"></path>
-                                            <text
-                                              class="select-none"
-                                              transform="rotate(120 38,36)"
-                                              x="50%"
-                                              y="50%"
-                                              text-anchor="middle"
-                                              fill="#333E48"
-                                              font-size="30px"
-                                              dy=".3em">
-                                              BW
-                                            </text>
-                                          </g>
-                                        </g>
-                                      </g>
-                                    </g>
-                                  </svg>
-                                </span>
-                              </li>
-                              <li class="-ml-2.5 z-20">
-                                <span>
-                                  <svg
-                                    role="presentation"
-                                    viewBox="0 0 75 74"
-                                    version="1.1"
-                                    width="32"
-                                    height="32"
-                                    loading="lazy"
-                                    class="rounded-full">
-                                    <g
-                                      stroke="none"
-                                      stroke-width="1"
-                                      fill="none"
-                                      fill-rule="evenodd">
-                                      <g
-                                        transform="translate(-750.000000, -109.000000)">
-                                        <g
-                                          transform="translate(787.926915, 146.475953) rotate(-120.000000) translate(-787.926915, -146.475953) translate(750.426915, 110.475953)">
-                                          <g
-                                            transform="translate(0.350000, 0.000000)">
-                                            <path
-                                              d="M35.66773,0.88851 C16.15488,0.88851 0.33628,16.70676 0.33628,36.21961 C0.33628,55.73246 16.15488,71.55106 35.66773,71.55106 C55.18093,71.55106 70.99918,55.73246 70.99918,36.21961 C70.99918,16.70676 55.18093,0.88851 35.66773,0.88851 L35.66773,0.88851 Z"
-                                              fill="#F1A080"></path>
-                                            <path
-                                              d="M38.117625,0.188335 C18.604775,0.188335 2.786525,16.006935 2.786525,35.519785 C2.786525,55.032635 18.604775,70.850885 38.117625,70.850885 C57.630825,70.850885 73.449075,55.032635 73.449075,35.519785 C73.449075,16.006935 57.630825,0.188335 38.117625,0.188335 Z"
-                                              stroke="#353E48"
-                                              stroke-width="1.75"
-                                              stroke-linecap="round"
-                                              stroke-linejoin="round"></path>
-                                            <text
-                                              class="select-none"
-                                              transform="rotate(120 38,36)"
-                                              x="50%"
-                                              y="50%"
-                                              text-anchor="middle"
-                                              fill="#333E48"
-                                              font-size="30px"
-                                              dy=".3em">
-                                              BW
-                                            </text>
-                                          </g>
-                                        </g>
-                                      </g>
-                                    </g>
-                                  </svg>
-                                </span>
-                              </li>
-                              <li class="-ml-2.5 z-10">
-                                <span>
-                                  <svg
-                                    role="presentation"
-                                    viewBox="0 0 75 74"
-                                    version="1.1"
-                                    width="32"
-                                    height="32"
-                                    loading="lazy"
-                                    class="rounded-full">
-                                    <g
-                                      stroke="none"
-                                      stroke-width="1"
-                                      fill="none"
-                                      fill-rule="evenodd">
-                                      <g
-                                        transform="translate(-750.000000, -109.000000)">
-                                        <g
-                                          transform="translate(787.926915, 146.475953) rotate(-120.000000) translate(-787.926915, -146.475953) translate(750.426915, 110.475953)">
-                                          <g
-                                            transform="translate(0.350000, 0.000000)">
-                                            <path
-                                              d="M35.66773,0.88851 C16.15488,0.88851 0.33628,16.70676 0.33628,36.21961 C0.33628,55.73246 16.15488,71.55106 35.66773,71.55106 C55.18093,71.55106 70.99918,55.73246 70.99918,36.21961 C70.99918,16.70676 55.18093,0.88851 35.66773,0.88851 L35.66773,0.88851 Z"
-                                              fill="#F1A080"></path>
-                                            <path
-                                              d="M38.117625,0.188335 C18.604775,0.188335 2.786525,16.006935 2.786525,35.519785 C2.786525,55.032635 18.604775,70.850885 38.117625,70.850885 C57.630825,70.850885 73.449075,55.032635 73.449075,35.519785 C73.449075,16.006935 57.630825,0.188335 38.117625,0.188335 Z"
-                                              stroke="#353E48"
-                                              stroke-width="1.75"
-                                              stroke-linecap="round"
-                                              stroke-linejoin="round"></path>
-                                            <text
-                                              class="select-none"
-                                              transform="rotate(120 38,36)"
-                                              x="50%"
-                                              y="50%"
-                                              text-anchor="middle"
-                                              fill="#333E48"
-                                              font-size="30px"
-                                              dy=".3em">
-                                              BW
-                                            </text>
-                                          </g>
-                                        </g>
-                                      </g>
-                                    </g>
-                                  </svg>
-                                </span>
-                              </li>
-                            </ul>
-                          </div>
-                          <div class="ml-2 text-[#707070] text-sm">
-                            129
-                          </div>
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-                </template>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- UPCOMING EVENTS SECTION END -->
-      <!-- POPULAR EVENTS SECTION START -->
-      <section>
-        <div
-          class="px-6 sm:px-4 xl:px-0 md:max-w-[1120px] w-full mx-auto py-16 mt-6">
-          <div
-            x-data="{
-              skip : 1,
-              next(){
-                this.scrollingTo((currentscrolledposition, offset) => currentscrolledposition + (offset * this.skip))
-              },
-    
-              prev(){
-                this.scrollingTo((currentscrolledposition, offset) => currentscrolledposition - (offset * this.skip))
-              },
-    
-              scrollingTo(direction){
-                let slider = this.$refs.slider
-                let currentscrolledposition = slider.scrollLeft
-                let offset = slider.lastElementChild.getBoundingClientRect().width;
-                slider.scrollTo({ left: direction(currentscrolledposition, offset), behavior: 'smooth' })
-              },
-              onlineCards: [
-                {
-                  title: `New Beginnings Virtual Book Club Meeting - Kingdom Single by Pastor Tony Evans`,
-                  type: 'Online event',
-                  time: 'Fri, Aug 4 · 3:00 AM PKT',
-                  info: `New Beginnings Christian Singles Meetup Group`,
-                  groupAge: 'new',
-                  attendees: 125,
-                },
-                {
-                  title: `New Beginnings Virtual Book Club Meeting - Kingdom Single by Pastor Tony Evans`,
-                  type: 'Online event',
-                  time: 'Fri, Aug 4 · 3:00 AM PKT',
-                  info: `New Beginnings Christian Singles Meetup Group`,
-                  groupAge: 'new',
-                  attendees: 125,
-                },
-                {
-                  title: `New Beginnings Virtual Book Club Meeting - Kingdom Single by Pastor Tony Evans`,
-                  type: 'Online event',
-                  time: 'Fri, Aug 4 · 3:00 AM PKT',
-                  info: `New Beginnings Christian Singles Meetup Group`,
-                  groupAge: 'new',
-                  attendees: 125,
-                },
-                {
-                  title: `New Beginnings Virtual Book Club Meeting - Kingdom Single by Pastor Tony Evans`,
-                  type: 'Online event',
-                  time: 'Fri, Aug 4 · 3:00 AM PKT',
-                  info: `New Beginnings Christian Singles Meetup Group`,
-                  groupAge: 'new',
-                  attendees: 125,
-                },
-                {
-                  title: `New Beginnings Virtual Book Club Meeting - Kingdom Single by Pastor Tony Evans`,
-                  type: 'Online event',
-                  time: 'Fri, Aug 4 · 3:00 AM PKT',
-                  info: `New Beginnings Christian Singles Meetup Group`,
-                  groupAge: 'new',
-                  attendees: 125,
-                },
-                {
-                  title: `New Beginnings Virtual Book Club Meeting - Kingdom Single by Pastor Tony Evans`,
-                  type: 'Online event',
-                  time: 'Fri, Aug 4 · 3:00 AM PKT',
-                  info: `New Beginnings Christian Singles Meetup Group`,
-                  groupAge: 'new',
-                  attendees: 125,
-                },
-                {
-                  title: `New Beginnings Virtual Book Club Meeting - Kingdom Single by Pastor Tony Evans`,
-                  type: 'Online event',
-                  time: 'Fri, Aug 4 · 3:00 AM PKT',
-                  info: `New Beginnings Christian Singles Meetup Group`,
-                  groupAge: 'new',
-                  attendees: 125,
-                },
-                {
-                  title: `New Beginnings Virtual Book Club Meeting - Kingdom Single by Pastor Tony Evans`,
-                  type: 'Online event',
-                  time: 'Fri, Aug 4 · 3:00 AM PKT',
-                  info: `New Beginnings Christian Singles Meetup Group`,
-                  groupAge: 'new',
-                  attendees: 125,
-                },
-                {
-                  title: `New Beginnings Virtual Book Club Meeting - Kingdom Single by Pastor Tony Evans`,
-                  type: 'Online event',
-                  time: 'Fri, Aug 4 · 3:00 AM PKT',
-                  info: `New Beginnings Christian Singles Meetup Group`,
-                  groupAge: 'new',
-                  attendees: 125,
-                },
-              ]
-            }"
-            class="flow-root">
-            <div
-              @keydown.right="next"
-              @keydown.left="prev"
-              tabindex="0"
-              class="relative flex flex-col sm:flex-row sm:items-end justify-between mb-2 md:items-center">
-              <div class="max-w-2xl">
-                <h2
-                  class="text-left sm:text-center text-2xl sm:text-3xl font-bold mb-2 uppercase">
-                  Popular groups
-                </h2>
-              </div>
-
-              <!-- LINK FOR MORE -->
-              <div class="flex justify-end items-center">
-                <a
-                  href="#"
-                  class="text-[#00798A] hover:underline"
-                  >Explore more groups</a
-                >
-              </div>
-            </div>
-            <!-- CONTROLS -->
-            <div
-              class="flex justify-end sm:ml-2 sm:mt-0 flex-shrink-0 mb-2">
-              <div
-                class="relative flex items-center text-neutral-900 dark:text-neutral-300">
-                <button
-                  @click="prev"
-                  class="w-10 h-10 mr-[6px] bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-600 hover:text-white hover:bg-[#00798A] dark:hover:border-neutral-500 rounded-full flex items-center justify-center hover:border-neutral-300 focus:outline-none transition-all"
-                  title="Prev">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-5 w-5"
-                    viewBox="0 0 20 20"
-                    fill="currentColor">
-                    <path
-                      fill-rule="evenodd"
-                      d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
-                      clip-rule="evenodd"></path>
-                  </svg>
-                </button>
-
-                <button
-                  @click="next"
-                  class="w-10 h-10 bg-white dark:bg-black border border-neutral-200 dark:border-neutral-600 dark:hover:border-neutral-500 rounded-full flex items-center justify-center hover:border-neutral-300 focus:outline-none hover:text-white hover:bg-[#00798A] transition-all"
-                  title="Next"
-                  data-glide-dir=">">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-5 w-5"
-                    viewBox="0 0 20 20"
-                    fill="currentColor">
-                    <path
-                      fill-rule="evenodd"
-                      d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                      clip-rule="evenodd"></path>
-                  </svg>
-                </button>
-              </div>
-            </div>
-            <div>
-              <ul
-                x-ref="slider"
-                tabindex="0"
-                class="flex w-full overflow-hidden snap-mandatory snap-x">
-                <template
-                  x-for="(onlineCard, index) in onlineCards"
-                  :key="index">
-                  <li
-                    class="flex-shrink-0 flex flex-col items-center justify-center snap-start w-full sm:w-1/2 md:w-1/3 p-1">
-                    <a
-                      class="block w-full"
-                      href="#">
-                      <div
-                        class="p-3 bg-white border border-[#D9D9D9] rounded-md">
-                        <div
-                          class="pb-2 flex border-b border-[#D9D9D9] gap-4">
-                          <div
-                            class="relative overflow-hidden rounded-md aspect-square w-[70px] h-[70px]">
-                            <img
-                              src="images/70x70.jpg"
-                              class="object-fill h-full w-full"
-                              alt="" />
-                          </div>
-                          <div class="flex-col flex justify-evenly">
-                            <span class="text-[#00798A] font-semibold"
-                              >New group</span
-                            >
-                            <h3
-                              class="text-xl font-semibold w-full whitespace-normal overflow-ellipsis line-clamp-2">
-                              NYC Soccer Collective
-                            </h3>
-                          </div>
-                        </div>
-                        <div class="pt-2 pb-3">
-                          <!-- TIME -->
-                          <div
-                            class="uppercase text-sm leading-5 tracking-tight text-[#7C6F50] font-bold py-1 line-clamp-1 lg:line-clamp-2">
-                            Fri, Aug 4 · 3:00 AM PKT
-                          </div>
-                          <!-- DETAILS -->
-                          <div
-                            class="uppercase text-base leading-5 tracking-tight text-[#212121] font-semibold py-1 line-clamp-1 lg:line-clamp-2">
-                            11V11 (CO-ED) Soccer Game @ Randall's
-                            Island Park - Field 70
-                          </div>
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-                </template>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- POPULAR EVENTS SECTION END -->
+      <!-- BENEFITS SECTION END-->
       <!-- STORIES SECTION START -->
-      <section>
+      <section class="bg-[#eee]">
         <div
-          class="px-6 sm:px-4 xl:px-0 md:max-w-[1120px] w-full mx-auto pt-10 pb-44">
+          class="px-6 sm:px-4 xl:px-0 md:max-w-[1120px] w-full mx-auto pt-20 pb-36">
           <div
             class="text-center overflow-hidden relative z-10 mb-10">
             <h2
               class="text-left sm:text-center text-2xl sm:text-3xl font-bold mb-2 uppercase">
-              Stories from mobWOW Meetup
+              Make 2023 your year with mobMeet
             </h2>
             <p
               class="text-left sm:text-center w-full max-w-3xl font-medium text-[#707070] mx-auto">
-              People on Meetup have fostered community, learned new
-              skills, started businesses, and made life-long friends.
-              Learn how.
+              It’s easy to quickly make new friends. There are more
+              than 60 million people on mobMeet looking to gather over
+              shared interests and hobbies, build professional
+              networks, or just have some fun.
             </p>
           </div>
           <!-- SECTION CONTENT -->
           <div
-            class="grid grid-cols-1 md:grid-cols-3 gap-x-7 gap-y-14">
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-7 gap-y-14">
             <!-- STORY -->
-            <div>
-              <a
-                href="#"
-                class="group">
-                <div class="aspect-video overflow-hidden rounded-lg">
-                  <img
-                    src="images/first_article.webp"
-                    alt=""
-                    class="object-fill w-full h-full group-hover:opacity-80 transition-all" />
-                </div>
-                <h3
-                  class="text-xl font-bold mb-4 mt-2 leading-tight group-hover:underline">
-                  8 Tips for Making the Most of Your Meetup Experience
-                </h3>
-                <p class="text-[#707070]">
-                  A member’s guide for creating a Meetup account,
-                  joining new groups, and attending events.
+            <div
+              class="relative bg-white rounded-lg overflow-hidden group shadow-[0_1px_6px_rgb(0_0_0_/_12%),_0_1px_4px_rgb(0_0_0_/_24%)] hover:shadow-[0_10px_30px_rgba(0,0,0,0.19),_0_6px_10px_rgba(0,0,0,0.23)] transition-all duration-500 ease-[ease]">
+              <div class="aspect-[3/2] overflow-hidden relative">
+                <img
+                  class="w-full h-full object-cover group-hover:scale-105 transition-all duration-500 ease-[ease]"
+                  src="images/friendship.webp"
+                  alt="" />
+                <div
+                  class="absolute top-0 left-0 w-full h-full bg-black/20 group-hover:bg-black/10 transition-all duration-500 ease-[ease]"></div>
+              </div>
+              <div
+                class="text-center md:text-left pt-6 pb-8 px-4 bg-white">
+                <h4
+                  class="text-lg text-[#212121] font-bold mb-2 transition-all">
+                  Build lasting friendships
+                </h4>
+                <p class="text-sm text-[#707070]">
+                  Spark new friendships. Start a group to meet people
+                  who are new in town or longtime locals. Enjoy
+                  nightlife, happy hours, game nights, music, and
+                  more.
                 </p>
-              </a>
+              </div>
             </div>
             <!-- STORY -->
-            <div>
-              <a
-                href="#"
-                class="group">
-                <div class="aspect-video overflow-hidden rounded-lg">
-                  <img
-                    src="images/second_article.webp"
-                    alt=""
-                    class="object-fill w-full h-full group-hover:opacity-80 transition-all" />
-                </div>
-                <h3
-                  class="text-xl font-bold mb-4 mt-2 leading-tight group-hover:underline">
-                  Tips for Making Friends as an Adult during Lonely
-                  Times
-                </h3>
-                <p class="text-[#707070]">
-                  The global pandemic ushered in an epidemic of
-                  loneliness. Here are some simple, straightforward
-                  ways to overcome it by sparking new friendships.
+            <div
+              class="relative bg-white rounded-lg overflow-hidden group shadow-[0_1px_6px_rgb(0_0_0_/_12%),_0_1px_4px_rgb(0_0_0_/_24%)] hover:shadow-[0_10px_30px_rgba(0,0,0,0.19),_0_6px_10px_rgba(0,0,0,0.23)] transition-all duration-500 ease-[ease]">
+              <div class="aspect-[3/2] overflow-hidden relative">
+                <img
+                  class="w-full h-full object-cover group-hover:scale-105 transition-all duration-500 ease-[ease]"
+                  src="images/yoga.webp"
+                  alt="" />
+                <div
+                  class="absolute top-0 left-0 w-full h-full bg-black/20 group-hover:bg-black/10 transition-all duration-500 ease-[ease]"></div>
+              </div>
+              <div
+                class="text-center md:text-left pt-6 pb-8 px-4 bg-white">
+                <h4
+                  class="text-lg text-[#212121] font-bold mb-2 transition-all">
+                  Build healthy habits
+                </h4>
+                <p class="text-sm text-[#707070]">
+                  What are your health goals this year? Start a group
+                  to practice yoga, meditate, eat better, play a
+                  sport, run, hike, bike, and meet your goals
+                  together.
                 </p>
-              </a>
+              </div>
             </div>
             <!-- STORY -->
-            <div>
-              <a
-                href="#"
-                class="group">
-                <div class="aspect-video overflow-hidden rounded-lg">
-                  <img
-                    src="images/third_article.webp"
-                    alt=""
-                    class="object-fill w-full h-full group-hover:opacity-80 transition-all" />
-                </div>
-                <h3
-                  class="text-xl font-bold mb-4 mt-2 leading-tight group-hover:underline">
-                  A Simple Guide for New Hikers
-                </h3>
-                <p class="text-[#707070]">
-                  Hiking is one of the most rewarding hobbies out
-                  there. Getting started can be intimidating if you’ve
-                  never done it before. With this guide, it won’t be.
+            <div
+              class="relative bg-white rounded-lg overflow-hidden group shadow-[0_1px_6px_rgb(0_0_0_/_12%),_0_1px_4px_rgb(0_0_0_/_24%)] hover:shadow-[0_10px_30px_rgba(0,0,0,0.19),_0_6px_10px_rgba(0,0,0,0.23)] transition-all duration-500 ease-[ease]">
+              <div class="aspect-[3/2] overflow-hidden relative">
+                <img
+                  class="w-full h-full object-cover group-hover:scale-105 transition-all duration-500 ease-[ease]"
+                  src="images/career.webp"
+                  alt="" />
+                <div
+                  class="absolute top-0 left-0 w-full h-full bg-black/20 group-hover:bg-black/10 transition-all duration-500 ease-[ease]"></div>
+              </div>
+              <div
+                class="text-center md:text-left pt-6 pb-8 px-4 bg-white">
+                <h4
+                  class="text-lg text-[#212121] font-bold mb-2 transition-all">
+                  Build a network for career success
+                </h4>
+                <p class="text-sm text-[#707070]">
+                  From real estate and cryptocurrency to
+                  entrepreneurship and business development, there are
+                  people who share your professional interests on
+                  Meetup. Start a group and get connected.
                 </p>
-              </a>
+              </div>
             </div>
+            <!-- STORY -->
+            <div
+              class="relative bg-white rounded-lg overflow-hidden group shadow-[0_1px_6px_rgb(0_0_0_/_12%),_0_1px_4px_rgb(0_0_0_/_24%)] hover:shadow-[0_10px_30px_rgba(0,0,0,0.19),_0_6px_10px_rgba(0,0,0,0.23)] transition-all duration-500 ease-[ease]">
+              <div class="aspect-[3/2] overflow-hidden relative">
+                <img
+                  class="w-full h-full object-cover group-hover:scale-105 transition-all duration-500 ease-[ease]"
+                  src="images/arts.webp"
+                  alt="" />
+                <div
+                  class="absolute top-0 left-0 w-full h-full bg-black/20 group-hover:bg-black/10 transition-all duration-500 ease-[ease]"></div>
+              </div>
+              <div
+                class="text-center md:text-left pt-6 pb-8 px-4 bg-white">
+                <h4
+                  class="text-lg text-[#212121] font-bold mb-2 transition-all">
+                  Prioritize your passions
+                </h4>
+                <p class="text-sm text-[#707070]">
+                  Meet people who share your love for art, crafts,
+                  writing, dancing, photography, language, or music.
+                  Teach lessons or start a culture exchange when you
+                  create a group.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- CTA -->
+          <div class="flex items-center justify-center mt-16">
+            <a
+              href="#"
+              class="max-w-[17rem] w-full text-center rounded-lg text-white fill-white font-bold text-lg py-3 px-3 bg-[#e32359] hover:bg-[#e63a6a] transition-all">
+              Start a group
+            </a>
           </div>
         </div>
       </section>
       <!-- STORIES SECTION END -->
+      <!-- VIDEO SECTION START -->
+      <section class="bg-[#eee]">
+        <div
+          class="px-6 sm:px-4 xl:px-0 md:max-w-[1120px] w-full mx-auto pb-24">
+          <div class="flex items-center justify-center">
+            <iframe
+              width="1350"
+              height="480"
+              src="https://www.youtube.com/embed/Am7eHyJ8_1Y?list=RDAm7eHyJ8_1Y"
+              title="Doctor Who - Doomsday Theme"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+      </section>
+      <!-- VIDEO SECTION END -->
       <!-- FOOTER SECTION START -->
       <footer class="bg-[#212121] text-[#F6F7F8]">
         <div
