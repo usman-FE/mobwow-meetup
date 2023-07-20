@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html
+  lang="en"
+  class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="./dist/main.css" />
+
+    <!-- <link
+      rel="icon"
+      type="image/x-icon"
+      href="/images/favicon-KnowAPE.png" /> -->
+
+    <!-- <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script> -->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.12.1/dist/cdn.min.js"></script>
+
+    <title>mobMeet | create a group</title>
+  </head>
+
+  <body>
+    <!-- MAIN CONTAINER START -->
+    <main class="h-full">
+      <!-- SIDE BOX -->
+      <div
+        class="bg-[#F65858] hidden lg:block fixed top-0 right-0 left-3/4 bottom-0"></div>
+      <!-- HEADER START -->
+      <header class="container mx-auto px-[15px] xl:max-w-[1200px]">
+        <!-- LOGO -->
+        <div class="py-8">
+          <a
+            href="#"
+            class="w-32 block">
+            <img
+              src="images/mobWOW-Base-Logo-Red (2).svg"
+              alt="Logo"
+              title="Logo"
+              class="w-full h-auto" />
+          </a>
+        </div>
+      </header>
+      <!-- HEADER END -->
+      <!-- ONBOARDING SECTION -->
+      <section
+        class="container mx-auto px-[15px] xl:max-w-[1200px] py-8"
+        x-data="{
+        progress: 80,
+      }">
+        <!-- BREADCRUMBS & PROGRESS -->
+        <div class="flex w-full md:max-w-[60%] justify-between">
+          <!-- BREADCRUMB -->
+          <a
+            href="create-a-group-step-4.html"
+            class="capitalize inline-flex items-center underline text-gray-700 transition-all hover:text-[#F65858]">
+            <span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                class="w-4 h-4">
+                <path
+                  fill-rule="evenodd"
+                  d="M12.79 5.23a.75.75 0 01-.02 1.06L8.832 10l3.938 3.71a.75.75 0 11-1.04 1.08l-4.5-4.25a.75.75 0 010-1.08l4.5-4.25a.75.75 0 011.06.02z"
+                  clip-rule="evenodd" />
+              </svg>
+            </span>
+            <span class="text-base">back</span>
+          </a>
+          <!-- PROGRESS -->
+          <span class="text-base text-[#000000de]"
+            ><span x-text="progress"></span>% completed</span
+          >
+        </div>
+
+        <!-- PROGRESS BAR -->
+        <div class="relative w-full md:max-w-[60%] mt-2">
+          <div class="bg-[#e0e0e0] w-full h-2 rounded-xl"></div>
+          <div
+            :style="'width:' + progress + '%'"
+            class="absolute top-0 left-0 h-2 rounded-xl bg-[#00798A]"></div>
+        </div>
+
+        <!-- SECTION HEADING -->
+        <div class="py-8">
+          <h1
+            class="text-3xl md:text-4xl tracking-tight font-bold my-2 text-[#212121]">
+            Choose the best plan for you
+          </h1>
+        </div>
+
+        <!-- PRICING SECTION START -->
+        <section
+          id="pricing"
+          x-data="{
+          selectedPlan: 2,
+          planOne: [
+            '1 Group',
+            '3 Events',
+            'Ticket fees and group dues',
+            'Email Support',
+            'Platform to manage a network of groups'
+          ],
+          planTwo: [
+            '3 Groups',
+            '10 Events',
+            'Group & event promotion to interested members',
+            'Assign unlimited co-hosts',
+            'Platform to manage a network of groups',
+            'Access to attendee emails',
+          ],
+          planThree: [
+            'Unlimited Groups',
+            'Unlimited Events',
+            'Group & event promotion to interested members',
+            'Assign unlimited co-hosts',
+            'Platform to manage a network of groups',
+            'Access to attendee emails',
+            'SEO-friendly branded network page',
+            'Easy Mailchimp integration',
+            'Premium support from experts'
+          ],
+      }"
+          class="relative mt-8">
+          <div class="">
+            <!-- PRICING PLANS -->
+            <div
+              class="mx-auto grid grid-cols-1 lg:grid-cols-3 gap-x-5 gap-y-10">
+              <!-- PLAN -->
+              <div
+                @click="selectedPlan = 1"
+                class="bg-white flex flex-col border rounded-3xl transition-all"
+                :class="selectedPlan === 1 ? 'border-[#00798A] scale-105' : 'border-borderGrey'">
+                <!-- PLAN HEADER -->
+                <div
+                  class="p-7 flex flex-col sm:flex-row gap-y-3 items-center sm:items-start">
+                  <!-- ICON -->
+                  <span class="w-16">
+                    <img
+                      src="images/plan-1.png"
+                      alt="" />
+                  </span>
+                  <!-- PRICING -->
+                  <div
+                    class="flex flex-col sm:ml-5 justify-between grow">
+                    <span
+                      class="uppercase text-base text-[#EDCB50] text-center sm:text-start"
+                      >Free</span
+                    >
+                    <span class="flex items-end mt-2">
+                      <span class="text-xl md:text-2xl xl:text-4xl"
+                        >$ 0</span
+                      >
+                    </span>
+                  </div>
+                </div>
+
+                <!-- PLAN POINTS -->
+                <div class="p-7 pt-0">
+                  <ul class="border-t border-borderLightGrey pt-7">
+                    <template
+                      x-for="(plan, index) in planOne"
+                      :key="index">
+                      <li class="flex items-center gap-5 mb-2">
+                        <span class="shrink-0">
+                          <img
+                            src="images/tick-small.png"
+                            alt="" />
+                        </span>
+                        <span
+                          class="text-sm sm:text-base"
+                          x-text="plan"></span>
+                      </li>
+                    </template>
+                  </ul>
+                </div>
+
+                <!-- CTA -->
+                <div class="flex p-7 pt-0 mt-auto">
+                  <a
+                    href="#"
+                    class="basis-full border border-[#EDCB50] rounded-lg py-2.5 text-center transition-all hover:text-white hover:bg-[#EDCB50]"
+                    :class="selectedPlan === 1 ? 'bg-[#EDCB50] text-white' : 'text-[#EDCB50] bg-white'"
+                    >Purchase now</a
+                  >
+                </div>
+              </div>
+              <!-- PLAN -->
+              <div
+                @click="selectedPlan = 2"
+                class="bg-white flex flex-col border rounded-3xl transition-all overflow-hidden relative"
+                :class="selectedPlan === 2 ? 'border-[#00798A] scale-105' : 'border-borderGrey'">
+                <!-- BG -->
+                <div class="absolute top-0 left-0 z-0">
+                  <img
+                    src="images/Group 37629.png"
+                    alt=""
+                    class="" />
+                </div>
+                <!-- PLAN HEADER -->
+                <div
+                  class="p-7 flex flex-col sm:flex-row gap-y-3 items-center sm:items-start relative z-10">
+                  <!-- ICON -->
+                  <span class="w-16">
+                    <img
+                      src="images/plan-2.png"
+                      alt="" />
+                  </span>
+                  <!-- PRICING -->
+                  <div
+                    class="flex flex-col ml-2 justify-between grow">
+                    <span class="uppercase text-base text-[#1681FE]">
+                      Standard
+                      <span
+                        class="absolute right-0 top-0 text-sm text-white bg-[#1681FE] py-1 px-2 rounded-md capitalize"
+                        >Popular</span
+                      >
+                    </span>
+                    <span class="flex items-end mt-4">
+                      <span class="text-xl md:text-2xl xl:text-4xl"
+                        >$ 9.99</span
+                      >
+                      <span class="text-lg ml-5 sm:ml-auto"
+                        >Per month</span
+                      >
+                    </span>
+                  </div>
+                </div>
+
+                <!-- PLAN POINTS -->
+                <div class="p-7 pt-0 relative z-10">
+                  <ul class="border-t border-borderLightGrey pt-7">
+                    <template
+                      x-for="(plan, index) in planTwo"
+                      :key="index">
+                      <li class="flex items-center gap-5 mb-2">
+                        <span class="shrink-0">
+                          <img
+                            src="images/tick-small.png"
+                            alt="" />
+                        </span>
+                        <span
+                          class="text-sm sm:text-base"
+                          x-text="plan"></span>
+                      </li>
+                    </template>
+                  </ul>
+                </div>
+
+                <!-- CTA -->
+                <div class="flex p-7 pt-0 mt-auto">
+                  <a
+                    href="#"
+                    class="basis-full border border-[#1681FE] rounded-lg py-2.5 text-center transition-all hover:text-white hover:bg-[#1681FE]"
+                    :class="selectedPlan === 2 ? 'bg-[#1681FE] text-white' : 'text-[#1681FE] bg-white'"
+                    >Purchase now</a
+                  >
+                </div>
+              </div>
+              <!-- PLAN -->
+              <div
+                @click="selectedPlan = 3"
+                class="bg-white flex flex-col border rounded-3xl transition-all relative"
+                :class="selectedPlan === 3 ? 'border-[#00798A] scale-105' : 'border-borderGrey'">
+                <!-- PLAN HEADER -->
+                <div
+                  class="p-7 flex flex-col sm:flex-row gap-y-3 items-center sm:items-start">
+                  <!-- ICON -->
+                  <span class="w-16">
+                    <img
+                      src="images/plan-3.png"
+                      alt="" />
+                  </span>
+                  <!-- PRICING -->
+                  <div
+                    class="flex flex-col sm:ml-5 justify-between grow text-center sm:text-left">
+                    <span class="uppercase text-base"
+                      >COMMUNITY THAT SCALES</span
+                    >
+                    <span class="flex items-end mt-2">
+                      <span class="text-xl text-[#36B37E] uppercase"
+                        >Premium</span
+                      >
+                    </span>
+                  </div>
+                </div>
+
+                <!-- PLAN POINTS -->
+                <div class="p-7 pt-0">
+                  <ul class="border-t border-borderLightGrey pt-7">
+                    <template
+                      x-for="(plan, index) in planThree"
+                      :key="index">
+                      <li class="flex items-center gap-5 mb-2">
+                        <span class="shrink-0">
+                          <img
+                            src="images/tick-small.png"
+                            alt="" />
+                        </span>
+                        <span
+                          class="text-sm sm:text-base"
+                          x-text="plan"></span>
+                      </li>
+                    </template>
+                  </ul>
+                </div>
+
+                <!-- CTA -->
+                <div class="flex p-7 pt-0 mt-auto">
+                  <a
+                    href="#"
+                    class="basis-full border border-[#36B37E] rounded-lg py-2.5 text-center transition-all hover:text-white hover:bg-[#36B37E]"
+                    :class="selectedPlan === 3 ? 'bg-[#36B37E] text-white' : 'text-[#36B37E] bg-white'"
+                    >Contact us now</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- PRICING SECTION END -->
+      </section>
+    </main>
+    <!-- MAIN CONTAINER END -->
+  </body>
+</html>
