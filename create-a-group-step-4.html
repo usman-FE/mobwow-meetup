@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html
+  lang="en"
+  class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="./dist/main.css" />
+
+    <!-- <link
+      rel="icon"
+      type="image/x-icon"
+      href="/images/favicon-KnowAPE.png" /> -->
+
+    <!-- <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script> -->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.12.1/dist/cdn.min.js"></script>
+
+    <title>mobMeet | create a group</title>
+  </head>
+
+  <body>
+    <!-- MAIN CONTAINER START -->
+    <main class="h-full">
+      <!-- SIDE BOX -->
+      <div
+        class="bg-[#F65858] hidden lg:block fixed top-0 right-0 left-3/4 bottom-0"></div>
+      <!-- HEADER START -->
+      <header class="container mx-auto px-[15px] xl:max-w-[1200px]">
+        <!-- LOGO -->
+        <div class="py-8">
+          <a
+            href="#"
+            class="w-32 block">
+            <img
+              src="images/mobWOW-Base-Logo-Red (2).svg"
+              alt="Logo"
+              title="Logo"
+              class="w-full h-auto" />
+          </a>
+        </div>
+      </header>
+      <!-- HEADER END -->
+      <!-- ONBOARDING SECTION -->
+      <section
+        class="container mx-auto px-[15px] xl:max-w-[1200px] py-8"
+        x-data="{
+        progress: 64,
+      }">
+        <!-- BREADCRUMBS & PROGRESS -->
+        <div class="flex w-full md:max-w-[60%] justify-between">
+          <!-- BREADCRUMB -->
+          <a
+            href="create-a-group-step-3.html"
+            class="capitalize inline-flex items-center underline text-gray-700 transition-all hover:text-[#F65858]">
+            <span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                class="w-4 h-4">
+                <path
+                  fill-rule="evenodd"
+                  d="M12.79 5.23a.75.75 0 01-.02 1.06L8.832 10l3.938 3.71a.75.75 0 11-1.04 1.08l-4.5-4.25a.75.75 0 010-1.08l4.5-4.25a.75.75 0 011.06.02z"
+                  clip-rule="evenodd" />
+              </svg>
+            </span>
+            <span class="text-base">back</span>
+          </a>
+          <!-- PROGRESS -->
+          <span class="text-base text-[#000000de]"
+            ><span x-text="progress"></span>% completed</span
+          >
+        </div>
+
+        <!-- PROGRESS BAR -->
+        <div class="relative w-full md:max-w-[60%] mt-2">
+          <div class="bg-[#e0e0e0] w-full h-2 rounded-xl"></div>
+          <div
+            :style="'width:' + progress + '%'"
+            class="absolute top-0 left-0 h-2 rounded-xl bg-[#00798A]"></div>
+        </div>
+
+        <!-- SECTION HEADING -->
+        <div class="py-8">
+          <h1
+            class="text-3xl md:text-4xl tracking-tight font-bold my-2 text-[#212121]">
+            Describe your group
+          </h1>
+          <p class="text-[#707070] text-lg max-w-2xl">
+            People will see this when we promote your group, but
+            you’ll be able to update it later too. We care about human
+            connection, so someone will review your group to make sure
+            it meets our
+            <a
+              href="#"
+              class="text-[#00798A] font-semibold hover:underline"
+              >community guidelines</a
+            >.
+          </p>
+          <div
+            class="text-[#212121] bg-[#F6F7F8] text-sm my-4 rounded-lg px-6 py-4 flex flex-col max-w-fit">
+            <span class="mr-2 text-[#00798A] flex gap-2 mb-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                class="w-5 h-5">
+                <path
+                  d="M11.983 1.907a.75.75 0 00-1.292-.657l-8.5 9.5A.75.75 0 002.75 12h6.572l-1.305 6.093a.75.75 0 001.292.657l8.5-9.5A.75.75 0 0017.25 8h-6.572l1.305-6.093z" />
+              </svg>
+              <span class="font-semibold">Tips</span>
+            </span>
+            <p class="font-semibold">Questions to consider:</p>
+            <ul class="list-disc pl-5">
+              <li>What’s the group goal?</li>
+              <li>Who are you hoping to meet?</li>
+              <li>What will you do at your events?</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- FORM -->
+        <div class="max-w-xl">
+          <form class="w-full">
+            <div class="relative">
+              <textarea
+                name="description"
+                id="description"
+                placeholder="Example: “Welcome tech lovers far and wide! We’re an online and in-person tech-enthusiast group hosting live speaking events on a range of tech topics. You can join us in person if possible or on one of our live streams. Look out for our virtual happy hours and other networking events.”
+                "
+                class="w-full min-h-[20rem] py-2 px-4 text-base font-normal text-[#000000de] border border-[#e6e6e6] rounded-md outline-[#00798A] transition-all hover:border-black"></textarea>
+            </div>
+            <!-- CTA -->
+            <div class="flex items-center justify-start mt-10">
+              <a
+                href="create-a-group-step-4.html"
+                class="max-w-[17rem] w-full text-center rounded-lg text-white fill-white font-bold text-base py-3 px-3 bg-[#e32359] hover:bg-[#e63a6a] transition-all">
+                Next
+              </a>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <!-- MAIN CONTAINER END -->
+  </body>
+</html>
